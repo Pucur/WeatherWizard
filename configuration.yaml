@@ -1,0 +1,57 @@
+input_number:
+  weatherwizard_temperature:
+    name: "WeatherWizard Temperature"
+    min: -50
+    max: 60
+    step: 0.1
+
+  weatherwizard_humidity:
+    name: "WeatherWizard Humidity"
+    min: 0
+    max: 100
+    step: 0.1
+
+  weatherwizard_pressure:
+    name: "WeatherWizard Pressure"
+    min: 800
+    max: 1200
+    step: 0.1
+
+  weatherwizard_rain:
+    name: "WeatherWizard Rain"
+    min: 0
+    max: 3300
+    step: 0.1
+
+  weatherwizard_uv:
+    name: "WeatherWizard UV"
+    min: 0
+    max: 15
+    step: 0.1
+sensor:
+  - platform: template
+    sensors:
+      weatherwizard_temperature:
+        friendly_name: "WeatherWizard Temperature"
+        unit_of_measurement: "°C"
+        value_template: "{{ states('input_number.weatherwizard_temperature') | float | round(1) }}"
+        
+      weatherwizard_humidity:
+        friendly_name: "WeatherWizard Humidity"
+        unit_of_measurement: "%"
+        value_template: "{{ states('input_number.weatherwizard_humidity') | float | round(0) }}"
+        
+      weatherwizard_pressure:
+        friendly_name: "WeatherWizard Pressure"
+        unit_of_measurement: "hPa"
+        value_template: "{{ states('input_number.weatherwizard_pressure') | float | round(0) }}"
+        
+      weatherwizard_rain:
+        friendly_name: "WeatherWizard Rain"
+        unit_of_measurement: "mm"
+        value_template: "{{ states('input_number.weatherwizard_rain') }}"
+        
+      weatherwizard_uv:
+        friendly_name: "WeatherWizard UV"
+        unit_of_measurement: ""
+        value_template: "{{ states('input_number.weatherwizard_uv') }}"
