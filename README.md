@@ -15,10 +15,12 @@ The ESP32-C3 sends the readings via **Bluetooth Low Energy (BLE)** to a **Raspbe
 
 | Component | Description | Store |
 |------------|-------------|--------|
-| ESP32-C3 SuperMini | BLE + WiFi microcontroller | HZWDONE / Huaxingfu |
-| BME280 Sensor | Temp / Humidity / Pressure | HNX DIY Electronics |
-| GUVA-S12SD | UV intensity sensor | YI-YUE Store |
-| Rain Sensor Module | Analog rain detector | Estardyn Choice Store |
-| INA219 | Power monitor (optional) | TENSTAR Store |
+| ESP32-C3 SuperMini | BLE + WiFi microcontroller |
+| BME280 Sensor | Temp / Humidity / Pressure |
+| GUVA-S12SD | UV intensity sensor |
+| Rain Sensor Module | Analog rain detector |
+| TP4056 Lithium Battery Charger | Battery charger with solar power |
+| Solar panel |
+| Samsung 18650 3250 mAh battery |
 
 ---
