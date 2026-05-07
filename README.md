@@ -1,4 +1,4 @@
-# 🌤️ WeatherWizard 32-C3
+# 🌤️ WeatherWizard ESP32-C3
 
 **A low-power BLE weather station using an ESP32-C3 and a Raspberry Pi 5.**
 
